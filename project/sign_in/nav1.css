@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;700&display=swap");
+/* Base */
+:root {
+  --clr-primary: #776bcc;
+}
+
+*{
+  font-family: "Nunito", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+.menu .container {
+  width: 80%;
+  margin: 0 auto;
+  height: 60px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header,
+.section {
+  width: 100%;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.header::after,
+.header::before,
+.section::after,
+.section::before {
+  content: "";
+  background: url(https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/blur-1.png);
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 0;
+}
+
+.header::after {
+  left: -200px;
+}
+
+.header::before {
+  right: -200px;
+}
+
+.mb {
+  margin-bottom: 30px;
+}
+
+.mt {
+  margin-top: 20px;
+}
+
+
+/* Menu */
+.menu {
+  width: 100%;
+  background-color: #5d54a4;
+  padding: 12px 0;
+}
+
+.menu .container {
+  justify-content: space-between;
+}
+
+.mobile-btn {
+  display: none;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo img {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.nav {
+  list-style: none;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-item:hover a {
+  color: #ffffff;
+  transition: 0.3s linear;
+}
+
+.nav-item:last-of-type {
+  margin-right: 0;
+}
+/* End Menu */
+
+/* Buttons */
+.btn {
+  padding: 10px 28px;
+  background: var(--clr-primary);
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #5716a1;
+  transition: 0.3s linear;
+}
+
+.btn-2 {
+  font-size: 35px;
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s linear;
+}
+
+.btn-2:hover {
+  color: #29a396;
+}
+
+/* End Buttons */
+
+.acc a {
+  padding: 10px 15px;
+  background: var(--clr-primary);
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+}
+
+.acc a:hover {
+  background: #5716a1;
+  color: #ffffff;
+  transition: 0.3s linear;
+}
+/* Header */
+.text {
+  width: 60%;
+}
+
+.visual {
+  width: 40%;
+}
+
+.visual img {
+  width: 100%;
+  border-radius: 17% 20% 52% 54%;
+  filter: drop-shadow(16px 7px 18px #574da1);
+}
+
+.header h1 {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.header h1 span {
+  color: var(--clr-primary);
+}
+/* End Header */
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mobile-btn {
+    display: block;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+  }
+
+  .menu.active .nav-item {
+    display: block;
+    margin: 30px 0;
+  }
+
+  .nav,
+  .menu .btn {
+    display: none;
+  }
+
+  .menu.active .nav,
+  .menu.active .btn {
+    display: block;
+  }
+
+  .menu.active {
+    padding: 30px 0;
+    width: 100%;
+    transition: all 0.8s ease;
+  }
+
+  .text,
+  .visual {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .text h1 {
+    font-size: 45px;
+  }
+
+}
+
+@media (max-width: 530px) {
+  .header::after,
+  .header::before {
+    display: none;
+  }
+
+
+
+  .text h1 {
+    font-size: 34px;
+  }
+
+  .btn,
+  .btn-2 {
+    font-size: 16px;
+  }
+}
+
+/* End Responsive */
+
+#button {
+  font-size: 18px;
+  color: #222;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+#button:focus,
+#button:hover {
+  color: #222;
+}
+
+#button:focus:after,
+#button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+#button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #ff00ff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+
+
+
