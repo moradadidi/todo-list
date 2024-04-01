@@ -1,0 +1,121 @@
+body {
+    background: linear-gradient(90deg, #c7c5f4, #776bcc);
+    font-family: sans-serif;
+    font-size: 10px;
+  }
+  
+  form {
+    background: linear-gradient(90deg, #5d54a4, #7c78b8);
+    padding: 4em 4em 2em;
+    max-width: 400px;
+    margin: 50px auto 0;
+    box-shadow: 0px 0px 24px #5c5696;
+    border-radius: 5px;
+  }
+  
+  form h2 {
+    margin: 0 0 30px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: #d5d5d5;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  form p {
+    margin: 0 0 3em 0;
+    position: relative;
+  }
+  
+  form input[type="text"],
+  form input[type="password"] {
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    font-size: 1.6em;
+    padding: 0.8em 0.5em;
+    border-radius: 5px;
+  }
+  
+  form input[type="text"]:focus,
+  form input[type="password"]:focus {
+    background: #fff;
+  }
+  
+  form span {
+    display: block;
+    background: #f9a5a5;
+    padding: 2px 5px;
+    color: #666;
+  }
+  
+  /* form input[type="submit"] {
+    background: #94af65;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 2em;
+    line-height: 1.6em;
+    margin: 2em 0 0;
+    outline: none;
+    padding: 0.8em 0;
+    text-shadow: 0 1px #68b25b;
+  } */
+  
+  /* form input[type="submit"]:hover {
+    background: #8aae5c;
+    text-shadow: 0 1px 3px rgba(148, 175, 101, 0.5);
+  }
+   */
+  form label {
+    position: absolute;
+    left: 8px;
+    top: 12px;
+    color: #cccccc;
+    font-size: 16px;
+    display: inline-block;
+    padding: 4px 10px;
+    font-weight: 400;
+    background-color: transparent;
+    border-radius: 20px;
+    transition: color 0.3s, top 0.3s, background-color 0.8s;
+  }
+  
+  form label.floatLabel {
+    top: -11px;
+    background: linear-gradient(90deg, #5d54a4, #7c78b8);
+    font-size: 14px;
+  }
+  .login__submit {
+    background: #fff;
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 16px 20px;
+    border-radius: 26px;
+    border: 1px solid #d4d3e8;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #4c489d;
+    box-shadow: 0px 2px 2px #5c5696;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .login__submit:active,
+  .login__submit:focus,
+  .login__submit:hover {
+    border-color: #6a679e;
+    outline: none;
+  }
+  
+  .button__icon {
+    font-size: 24px;
+    margin-left: auto;
+    color: #7875b5;
+  }
+
+  
